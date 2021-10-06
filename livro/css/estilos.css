@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 25px;
+}
+
+.container{
+    padding: 0 2%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.text{
+    margin: 25px 0;
+}
+
+p{
+    font-family: arial;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 21px;
+}
+
+.photo-box{
+    text-align: center;
+}
+
+span{
+    margin-left: 25px;
+}
+
+.box{
+    text-align: center;
+    margin-top: 25px;
+}
+
+button{
+    border: 1px solid black;
+    padding: 12px 18px;
+    color: white;
+    background: cornflowerblue;
+    cursor: pointer;
+    width: 500px;
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+button:hover{
+    background: rgb(60, 122, 238);
+}
+
+/*Reset Padrão*/
+
+.img-1{
+    width: 1000px;
+}
