@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        class Elevador{
+            constructor(andarTotal, pessoas, andarAtual, capacidade){
+                this.andar = andarTotal;
+                this.pessoas = pessoas;
+                this.andarAtual = andarAtual;
+                this.capacidade = capacidade;
+            }
+
+            entra(x){
+                if(x > this.capacidade){
+                    console.log('O elevador só comporta 7 pessoas');
+                }else if((x + this.pessoas) > this.capacidade){
+                    console.log('O elevador só comporta até 7 pessoas');
+                }else if(x <= this.capacidade){
+                    this.pessoas = this.pessoas + x;
+                    console.log('O elevador tem ' + this.pessoas + ' pessoas');
+                }
+            }
+
+            sai(x){
+                if(x > this.pessoas){
+                    console.log('O elevaodr não pode ter pessoas negativas');
+                }else if(x <= this.pessoas){
+                    this.pessoas = this.pessoas - x;
+                    console.log('O elevador tem ' + this.pessoas + ' pessoas');
+                }           
+            }
+
+            sobe(x){
+                if(x > this.andar){
+                    console.log('O prédio só tem 23 andares');
+                }else if((x + this.andarAtual) > this.andar){
+                    console.log('O prédio só tem 23 andares');
+                }else if(x <= this.andar){
+                    this.andarAtual = this.andarAtual + x;
+                    console.log('O elevdor está no andar ' + this.andarAtual);
+                }   
+            }
+
+            desce(x){
+                if(x > this.andarAtual){
+                    console.log('O prédio só tem 23 andares');
+                }else if(x <= this.andarAtual){
+                    this.andarAtual = this.andarAtual - x;
+                    console.log('O elevador está no andar ' + this.andarAtual);
+                }
+            }
+        }
+
+        const elevador = new Elevador(23, 0, 0, 7);
+    </script>
+</body>
+</html>
